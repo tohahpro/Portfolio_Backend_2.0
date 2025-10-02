@@ -4,6 +4,7 @@ import express from "express";
 import { UserRouter } from "./modules/user/user.routes";
 import { PostRouter } from "./modules/post/post.route";
 import { AuthRouter } from "./modules/auth/auth.route";
+import { ProjectRouter } from "./modules/project/project.route";
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(
 app.use("/api/v1/user", UserRouter)
 app.use("/api/v1/post", PostRouter)
 app.use("/api/v1/auth", AuthRouter)
+app.use("/api/v1/project", ProjectRouter)
 
 
 
